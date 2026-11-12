@@ -142,6 +142,7 @@ def scene(i, t):
     d.line([(W / 2 - 80, 970), (W / 2 + 80, 970)], fill=(255, 255, 255, 200), width=3)
     text_center(d, 1010, "구축이라 포기하지 마세요", 50, fill=(230, 230, 230, 255))
     pill(d, W / 2, 1200, "상담은 DM · 프로필 링크", 48, (255, 255, 255, 255), (20, 20, 20, 255))
+    text_center(d, 1340, "@design_jplus_official", 46, fill=(255, 255, 255, 235))
     a = fade_in(t, s + 0.1, 0.5)
     layer.putalpha(layer.getchannel("A").point(lambda v: int(v * a)))
     return Image.alpha_composite(f, layer)
